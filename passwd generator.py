@@ -15,7 +15,7 @@ while ch!="no":
         i = 0
         s = ""
         while i < length:
-            c = random.choice(lowercase +  uppercase)
+            c = random.choice(lowercase) +  random.choice(uppercase)
             s += str(c)
             i += 1
         print("The generated password is:", s, end="")
@@ -23,7 +23,7 @@ while ch!="no":
         i = 0
         s = ""
         while i < length:
-            c = random.choice(lowercase + uppercase+digit)
+            c = random.choice(lowercase) +  random.choice(uppercase)
             s += str(c)
             i += 1
         print("The generated password is:", s, end="")
@@ -31,7 +31,7 @@ while ch!="no":
         i = 0
         s = ""
         while i < length:
-            c = random.choice(lowercase + uppercase+digit+special)
+            c = random.choice(lowercase) +  random.choice(uppercase)
             s += str(c)
             i += 1
         print("The generated password is:", s, end="")
